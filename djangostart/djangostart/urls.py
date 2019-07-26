@@ -28,4 +28,5 @@ urlpatterns = [
 
     url('^route_base/', include('apps.route_base.urls',namespace='route_base')),
     url('^route_resolve/', include('apps.route_resolve.urls',namespace='route_resolve')),
+    url('^django_templates/', include('apps.django_templates.urls',namespace='django_templates')),
 ]

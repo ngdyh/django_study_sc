@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'app001',
     'apps.route_base',
     'apps.route_resolve',
+    'apps.django_templates'
 ]
 
 MIDDLEWARE = [
@@ -122,5 +123,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS=[
-    os.path.join(BASE_DIR, 'static')
+    os.path.join(BASE_DIR, 'static'),
+    # os.path.join(BASE_DIR, 'apps/django_templates/static'),
 ]
