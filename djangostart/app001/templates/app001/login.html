@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>仿百度登陆</title>
+    <link rel="stylesheet" type="text/css" href="/static/app001/css/mycss.css">
+</head>
+<body>
+<form method="post">
+    {% csrf_token %}
+    <div class="div1">
+        <p class="logodiv">用户名密码登录 </p>
+            <input type="text" name="username" placeholder="用户名" class="window-login">
+            <input type="password" name="password" placeholder="密码" class="window-login">
+        <br/>
+            <input type="checkbox" name="like" class="rember-password">
+            <label class="rember-password-word">记住密码</label><label style="position: relative;left: 100px;bottom: 20px">{{ msg }}</label>
+        <br/>
+            <button type="submit" class="login-button"><label class="login-button-font">登陆</label></button>
+            <a href="#" class="forget-password">忘记密码?</a>
+            <a href="#" class="text-shortcut-login">短信快捷登录</a>
+        <br/>
+        <div class="footerbar">
+            <a href="#" class="scan-login">扫码登陆</a>
+            <a href="#" class="goto-register">立即注册</a>
+            <div class="block-wechat">
+                <table >|&nbsp;
+                    <a href="#"><img border="0" src="/static/app001/imgs/wechat.png"></a>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</form>
+</body>
+</html>
