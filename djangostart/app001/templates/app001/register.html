@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>仿百度注册</title>
+
+    <link rel="stylesheet" href="/static/app001/css/mycss.css">
+</head>
+<body>
+
+<form method="post" >
+    {% csrf_token %}
+    <div class="register-head">
+        <a href="https://www.baidu.com"><img src="/static/app001/imgs/baidu-loginlogo.png" class="register-head-logo"></a>
+        <label class="register-head-word">|&nbsp;注册百度账号</label>
+    </div>
+    <div class="register">
+        <p class="register-input-form1">
+            <label>用户名</label>
+            <input class="register-input-username" name="username" type="text" id="register_username" placeholder="请设置用户名">
+            <span class="register-input-username-info" id="input_nameinfo" style="display: none">中英文均可<br/>最长14个英文或7个汉字</span>
+        </p>
+        <p class="register-input-form2">
+            <label>手机号</label>
+            <input class="register-input-userphone" name="tel" type="text" id="register_userphone" placeholder="请填写手机号">
+            <span class="register-input-phone-info" id="input_phoneinfo" style="display: none">请输入中国大陆手机号</span>
+        </p>
+        <p class="register-input-form3">
+            <label>密码</label>
+            <input class="register-input-userpassword" name="password" type="text" id="register_userpassword" placeholder="请设置用户密码">
+    {#        <div>#}
+    {##}
+    {#        </div>#}
+        </p>
+        <p class="register-input-form4">
+            <label>验证码</label>
+            <input class="register-acquire-authcode" name="check_button" type="button" value="点击获取验证码" style="width: 128px">
+            <input class="register-input-authcode" name="check_number" type="text" placeholder="验证码">
+
+        </p>
+        <p style="margin-left: 75px;font-size: 12px">
+            <input type="checkbox"> 阅读并接受<a href="#">《百度用户协议》</a>及<a href="#">《百度隐私权保护声明》</a>
+        </p>
+        <p style="margin-left: 75px;">
+            <button class="register-submit-button" type="submit" >注册</button>
+        </p>
+    </div>
+</form>
+<script src="/static/app001/js/jquery-3.4.1.min.js"></script>
+<script src="/static/app001/js/myJavaScript.js"></script>
+</body>
+</html>
+
