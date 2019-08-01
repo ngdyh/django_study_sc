@@ -25,7 +25,7 @@ SECRET_KEY = '#u^8zjc#nk@w(*a3qhw4-vee!5hd*@f9%s9b^5z22)wd3=xav+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'apps.django_templates',
     'apps.forms_base',
     'apps.forms_auth',
+    'apps.django_view',
 ]
 
 MIDDLEWARE = [
@@ -128,3 +129,10 @@ STATICFILES_DIRS=[
     os.path.join(BASE_DIR, 'static'),
     # os.path.join(BASE_DIR, 'apps/django_templates/static'),
 ]
+
+
+# STATIC_ROOT 用来收集所有app的静态文件，放到这个目录下
+# 要运行 python manage.py collectstatic
+# 目录不能与STATICFILES_DIRS冲突
+# 在urls中添加: url(r'^%s(?P<path>.*)$' % re.escape(settings.STATIC_URL.lstrip('/')), serve, {"document_root": settings.STATIC_ROOT}),
+STATIC_ROOT = os.path.join(BASE_DIR, "static_collect")

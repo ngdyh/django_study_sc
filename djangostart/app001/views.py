@@ -1,5 +1,6 @@
 from django.shortcuts import render,HttpResponse
 from .models import UserInfo
+import random
 # Create your views here.
 
 def test(req):
@@ -55,3 +56,17 @@ def demo_register(request):
 def demo_index(request):
     user_list = UserInfo.objects.all()
     return render(request,'app001/index.html',{"user_list":user_list})
+
+
+
+
+
+def my404(request):
+    id = random.randint(1, 100)
+    return render(request, '状态404.html', {"id":id}, status=404)
+
+
+
+def my500(request):
+    return render(request, '状态500.html', status=500)
+
