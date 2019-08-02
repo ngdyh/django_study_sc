@@ -1,0 +1,11 @@
+    <div class="row placeholders">
+        {% for item in Today_recommend %}
+        <div class="col-xs-6 col-sm-3 placeholder">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" class="img-responsive" alt="Generic placeholder thumbnail" width="200" height="200">
+        <h4>{{ forloop.counter }}.{{ item.name }}</h4>
+        <span class="text-muted">{{ item.msg }}</span>
+        </div>
+            {% empty %}
+            今日暂无推荐
+        {% endfor %}
+    </div>
