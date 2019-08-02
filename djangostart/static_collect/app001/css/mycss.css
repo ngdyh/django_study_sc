@@ -1,0 +1,257 @@
+/*p {*/
+    /*background-color: darkseagreen;*/
+/*}*/
+/*body {*/
+    /*height: 200px;*/
+    /*background-color: aqua;*/
+    /*background-image: url('../imgs/2.jpg');    !*无法使用*!*/
+    /*!*background-image: url('../imgs/2.jpg');  !*设置图片*!*!*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: center;*/
+    /*background-size: 200px 400px;*/
+    /*!*background: url("../imgs/2.jpg");*!*/
+/*}*/
+
+/*登陆*/
+.table_th {
+    background-color: #E9FBFF;
+}
+.table_left {
+    background-color: #F3FBFF !important;
+}
+tbody>tr>td:first-child {
+    background-color: #F3F3F3;
+}
+.table_in1 {
+    background-color: #F3F3F3;
+}
+
+
+.div1{
+    width:360px;
+    height: 410px;
+    margin: 100px auto 0;
+    border: 1px solid red;
+
+}
+.logodiv{
+    background: url("../imgs/baidu-loginlogo.png") no-repeat left;
+    position: relative;
+    left: 15px;
+    height: 30px;
+    padding-left:110px;
+    padding-top: 18px;
+}
+.window-login{
+    position: relative;
+    left: 15px;
+    padding: 12px 1px;/*内边框*/
+    width: 320px;
+    margin-bottom: 20px;
+}
+.rember-password{
+    position: relative;
+    left: 22px;
+    top: 1px;
+    margin: 8px 0;
+}
+.rember-password-word{
+    margin-left: 23px;
+    font-size: 13px;
+}
+.login-button{
+    background: #3F89EC;
+    box-sizing: border-box;
+    -moz-box-sizing:border-box;
+    border: solid thin white;/*边框样式*/
+    position: relative;
+    margin: 12px 18px;/*外边框*/
+    width: 315px;
+    height: 42px;
+    border-radius:5px;/*添加圆角边*/
+}
+.login-button-font{
+    font-size: 18px;
+    color: white
+}
+.forget-password{
+    text-decoration: none;
+    font-size: 14px;
+    position: relative;
+    left: 18px;
+}
+.text-shortcut-login{
+    text-decoration: none;
+    font-size: 14px;
+    position: relative;
+    left: 182px;
+}
+.footerbar{
+    position: relative;
+    height: 52px;
+    width: 100%;
+    margin-top: 40px;
+    background-color: #EFE6E6;
+}
+.scan-login{
+    text-decoration: none;
+    font-size: 15px;
+    position: relative;
+    left: 18px;
+    top: 15px;
+}
+.block-wechat{
+    position: relative;
+    width:40px;
+    font-size: 14px;
+    top: -5px;
+    left: 92px;
+    padding: 0 10px 0;
+
+
+}
+.goto-register{
+    text-decoration: none;
+    position: relative;
+    left: 210px;
+    top: 15px;
+    font-size: 15px;
+}
+/*注册*/
+.register-head{
+    width:110%;
+    height: 75px;
+    margin:-10px 0 10px -10px;
+    padding: 0;
+    box-shadow: 1px 3px 10px  #ccc;
+
+}
+.register-head-word{
+    position: relative;
+    top: 14px;
+    left: 40px;
+    font-size: 21px;
+    font-family: Tahoma,Helvetica,"Microsoft Yahei","微软雅黑",Arial,STHeiti;
+}
+.register-head-logo{
+    width: 160px;
+    height: 40px;
+    position: relative;
+    top: 20px;
+
+    left: 50px;
+}
+
+
+.register-input-form1{
+    position: relative;
+    top:10px;
+    margin: 5px 0;
+    clear: both;
+}
+.register-input-username{
+    display: block;
+    position: relative;
+    top:-20px;
+    left: 60px;
+    height: 16px;
+    width: 328px;
+    padding: 11px 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    color: #666;
+}
+.register-input-username-info{
+    position: relative;
+    top: -60px;
+    left: 420px;
+    font-size: 12px;
+    color: #999;
+}
+.register-input-form2{
+    position: relative;
+    top:10px;
+    margin: 5px 0;
+    clear: both;
+}
+.register-input-userphone{
+    display: block;
+    position: relative;
+    top:-20px;
+    left: 60px;
+    height: 16px;
+    width: 328px;
+    padding: 11px 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    color: #666;
+}
+.register-input-phone-info{
+    position: relative;
+    top: -50px;
+    left: 420px;
+    font-size: 12px;
+    color: #999;
+}
+.register-input-form3{
+    position: relative;
+    top:10px;
+    margin: 5px 0;
+    clear: both;
+}
+.register-input-userpassword{
+    display: block;
+    position: relative;
+    top:-20px;
+    left: 60px;
+    height: 16px;
+    width: 328px;
+    padding: 11px 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    color: #666;
+}
+.register-input-form4{
+    position: relative;
+    top:10px;
+    margin: 5px 0;
+    clear: both;
+}
+.register-input-authcode{
+    display: block;
+    position: relative;
+    top:-40px;
+    left: 60px;
+    height: 16px;
+    width: 180px;
+    padding: 11px 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    color: #666;
+}
+.register-acquire-authcode{
+    border: 1px solid #ddd;
+    position: relative;
+    left: 225px;
+    height: 40px;
+    padding: 11px 10px;
+    cursor: pointer;
+}
+.register-submit-button{
+    position: relative;
+    left:-16px;
+    width: 350px;
+    display: block;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    color: #fff;
+    background: #4490F7;
+    border-radius: 3px;
+    border: 0;
+}
