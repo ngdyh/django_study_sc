@@ -16,6 +16,10 @@ Including another URLconf
 from django.conf.urls import url, include, handler404, handler500
 from django.contrib import admin
 from app001 import views
+from django.views.static import serve
+from . import settings
+import re
+
 
 
 urlpatterns = [
@@ -32,8 +36,9 @@ urlpatterns = [
     url('^django_templates/', include('apps.django_templates.urls', namespace='django_templates')),
     url(r'^forms_base/', include('apps.forms_base.urls', namespace='forms_base')),
     url(r'^forms_auth/', include('apps.forms_auth.urls', namespace='forms_auth')),
-    url(r'^django_view/', include('apps.django_view.urls', namespace='django_view'))
-
+    url(r'^django_view/', include('apps.django_view.urls', namespace='django_view')),
+    url(r'^%s(?P<path>.*)$' % re.escape(settings.STATIC_URL.lstrip('/')), serve, {"document_root": settings.STATIC_ROOT}),
+    url(r'^%s(?P<path>.*)$' % re.escape(settings.MEDIA_URL.lstrip('/')), serve, {"document_root": settings.MEDIA_ROOT}),
 
 ]
 
